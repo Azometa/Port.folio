@@ -8,186 +8,234 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- NAV -->
-<header class="nav-wrap">
-  <nav class="nav">
-    <a class="brand" href="#top" id="top">Angelique Zometa</a>
-    <ul class="nav-links">
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact" class="pill">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark">AZ</span>
+        <span class="brand-name">Angelique Zometa</span>
+      </a>
 
-<!-- HERO (banner + avatar like the example) -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+      <ul class="nav-links">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="hero-inner">
-    <div class="avatar" aria-hidden="true">AZ</div>
-    <h1>Angelique Zometa</h1>
-    <p class="tagline">Aspiring Software Engineer & IT Professional</p>
+  <!-- HERO BANNER (like your example) -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
 
-    <div class="hero-actions">
-      <a class="btn primary" href="#projects"><i class="fas fa-folder-open"></i> View Projects</a>
-      <a class="btn ghost" href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
-    </div>
-  </div>
-</section>
+    <div class="hero-inner">
+      <div class="hero-profile">
+        <!-- You can replace "AZ" with your photo later -->
+        <div class="avatar" aria-label="Angelique Zometa">AZ</div>
 
-<!-- MISSION (image + text card like the example) -->
-<section id="mission" class="section">
-  <div class="container card mission">
-    <img
-      class="mission-img"
-      src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
-      alt="Close-up of a circuit board and components"
-    />
-    <div class="mission-text">
-      <h2>Mission</h2>
-      <p>
-        I’m building a strong foundation in IT and software engineering by practicing modern web development,
-        problem-solving, and technical support skills. I value clean, organized work, clear communication,
-        and creating user-friendly solutions that feel polished and professional.
-      </p>
-      <div class="mini-metrics">
-        <span><i class="fas fa-shield-alt"></i> Reliability</span>
-        <span><i class="fas fa-cogs"></i> Systems mindset</span>
-        <span><i class="fas fa-user-check"></i> Customer-first</span>
+        <div class="hero-title">
+          <h1>Angelique Zometa</h1>
+          <p class="hero-subtitle">Aspiring Software Engineer & IT Professional</p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Let’s Connect</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SKILLS (chip buttons like the example) -->
-<section id="skills" class="section alt">
-  <div class="container">
-    <h2 class="center">Skills</h2>
-    <p class="center sub">Here are a few technical skills I’m building and strengthening:</p>
-
-    <div class="chip-row">
-      <span class="chip"><i class="fab fa-html5"></i> HTML</span>
-      <span class="chip"><i class="fab fa-css3-alt"></i> CSS</span>
-      <span class="chip"><i class="fab fa-js"></i> JavaScript</span>
-      <span class="chip"><i class="fab fa-github"></i> GitHub</span>
-      <span class="chip"><i class="fas fa-desktop"></i> IT Support</span>
-      <span class="chip"><i class="fas fa-network-wired"></i> Networking Basics</span>
-      <span class="chip"><i class="fas fa-lock"></i> Security Awareness</span>
+  <!-- MISSION (like your example’s card + image) -->
+  <section class="section" id="mission">
+    <div class="section-head">
+      <h2>Mission</h2>
+      <p class="section-sub">
+        I build clean, secure, and user-friendly solutions—while growing toward a strong entry-level IT and software career.
+      </p>
     </div>
 
-    <!-- Optional “gadget strip” like the example has visual areas -->
-    <div class="gadget-grid">
-      <figure class="gadget">
-        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80" alt="Laptop on a desk" />
-        <figcaption>Laptop + Workflow</figcaption>
+    <div class="card mission-card">
+      <img
+        class="mission-img"
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+        alt="Close-up of a circuit board and technology components"
+      />
+      <div class="mission-copy">
+        <h3>Tech-first, detail-driven</h3>
+        <p>
+          I’m a motivated student pursuing a career in software engineering and IT. I enjoy solving problems, learning new
+          technologies, and creating clean, user-friendly digital experiences. I take pride in being reliable, detail-oriented,
+          and committed to continuous growth. My goal is to build strong technical skills while developing the communication
+          and teamwork abilities needed to succeed in the tech industry.
+        </p>
+
+        <div class="mini-metrics">
+          <span><i class="fas fa-shield-alt"></i> Security mindset</span>
+          <span><i class="fas fa-headset"></i> Support-first</span>
+          <span><i class="fas fa-code"></i> Clean code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS BAR (chips like the example) -->
+  <section class="section alt" id="skills">
+    <div class="section-head center">
+      <h2>Skills</h2>
+      <p class="section-sub">Here are a few of the skills I bring to the table.</p>
+    </div>
+
+    <div class="skills-bar" role="list">
+      <span class="chip" role="listitem"><i class="fab fa-html5"></i> HTML</span>
+      <span class="chip" role="listitem"><i class="fab fa-css3-alt"></i> CSS</span>
+      <span class="chip" role="listitem"><i class="fab fa-js"></i> JavaScript</span>
+      <span class="chip" role="listitem"><i class="fab fa-github"></i> GitHub</span>
+      <span class="chip" role="listitem"><i class="fas fa-network-wired"></i> Networking Basics</span>
+      <span class="chip" role="listitem"><i class="fas fa-tools"></i> Troubleshooting</span>
+      <span class="chip" role="listitem"><i class="fas fa-lock"></i> Security Awareness</span>
+    </div>
+
+    <!-- IT gadget images (girly + tech) -->
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80" alt="Laptop and workstation setup" />
+        <figcaption>Workstation Setup</figcaption>
       </figure>
-      <figure class="gadget">
-        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8f?auto=format&fit=crop&w=1200&q=80" alt="Server racks in a data center" />
-        <figcaption>Systems + Infrastructure</figcaption>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80" alt="Colorful keyboard and tech accessories" />
+        <figcaption>Keyboard + Accessories</figcaption>
       </figure>
-      <figure class="gadget">
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Code on a screen" />
-        <figcaption>Coding + Debugging</figcaption>
+      <figure class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8f?auto=format&fit=crop&w=1200&q=80" alt="Server room lighting and equipment" />
+        <figcaption>Infrastructure</figcaption>
       </figure>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS (cards) -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="center">Projects</h2>
-    <p class="center sub">A growing collection of my course projects and IT-focused work.</p>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="section-sub">A growing collection of work from this course and beyond.</p>
+    </div>
 
-    <div class="project-grid">
+    <div class="projects-grid">
       <article class="project-card">
-        <img
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-          alt="Team collaborating at a desk"
-        />
+        <div class="project-media">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+            alt="Code on a screen"
+          />
+        </div>
         <div class="project-body">
           <h3>Portfolio Website</h3>
           <p>
-            A single-page portfolio using HTML + CSS with a polished UI and GitHub Pages deployment.
+            A modern single-page portfolio built with HTML/CSS and deployed using GitHub Pages.
+            Designed with a premium purple theme and responsive layout.
           </p>
-          <div class="badges">
-            <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+          <div class="project-links">
+            <a class="link" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a class="link" href="#contact">
+              <i class="fas fa-paper-plane"></i> Contact
+            </a>
           </div>
         </div>
       </article>
 
       <article class="project-card">
-        <img
-          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
-          alt="Cybersecurity themed image"
-        />
+        <div class="project-media">
+          <img
+            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80"
+            alt="Laptop with modern UI and analytics"
+          />
+        </div>
         <div class="project-body">
-          <h3>IT Learning Log</h3>
+          <h3>Next IT Project (Coming Soon)</h3>
           <p>
-            Documenting my growth in troubleshooting, ticketing mindset, and system fundamentals.
+            I’ll add my next project here with a short description, what problem it solves, and what tools I used.
           </p>
-          <div class="badges">
-            <span>Troubleshooting</span><span>Documentation</span><span>Support</span>
+          <div class="project-tags">
+            <span class="tag">Troubleshooting</span>
+            <span class="tag">Documentation</span>
+            <span class="tag">Support</span>
+          </div>
+          <div class="project-links">
+            <span class="muted"><i class="fas fa-clock"></i> In progress</span>
           </div>
         </div>
       </article>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section alt">
-  <div class="container">
-    <h2 class="center">Contact</h2>
-    <p class="center sub">Open to entry-level IT opportunities and continued learning.</p>
+  <!-- CONTACT -->
+  <section class="section alt" id="contact">
+    <div class="section-head center">
+      <h2>Contact</h2>
+      <p class="section-sub">Open to entry-level IT roles and growth opportunities.</p>
+    </div>
 
     <div class="contact-card">
-      <a class="contact-item" href="mailto:angeliquezometa@gmail.com">
+      <div class="contact-item">
         <i class="fas fa-envelope"></i>
         <div>
-          <div class="label">Email</div>
-          <div class="value">angeliquezometa@gmail.com</div>
+          <p class="label">Email</p>
+          <p class="value">
+            <a href="mailto:angeliquezometa@gmail.com">angeliquezometa@gmail.com</a>
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a class="contact-item" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">
+      <div class="contact-item">
         <i class="fab fa-linkedin"></i>
         <div>
-          <div class="label">LinkedIn</div>
-          <div class="value">Angelique Zometa</div>
+          <p class="label">LinkedIn</p>
+          <p class="value">
+            <a href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/angelique-zometa-9a49493a0
+            </a>
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a class="contact-item" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
+      <div class="contact-item">
         <i class="fab fa-github"></i>
         <div>
-          <div class="label">GitHub</div>
-          <div class="value">github.com/Azometa</div>
+          <p class="label">GitHub</p>
+          <p class="value">
+            <a href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
+              github.com/Azometa
+            </a>
+          </p>
         </div>
-      </a>
+      </div>
     </div>
-  </div>
-</section>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>© 2026 Angelique Zometa</p>
-    <p class="muted">Designed with a posh, girly tech aesthetic.</p>
-  </div>
-</footer>
+    <div class="footer-cta">
+      <a class="btn primary" href="#top">Back to Top</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Angelique Zometa • IT Portfolio</p>
+  </footer>
 
 </body>
 </html>
-
