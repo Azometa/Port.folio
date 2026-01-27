@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Icons (Font Awesome CDN - more reliable than kit) -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <link rel="stylesheet" href="style.css" />
@@ -30,6 +30,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#reflection">Reflection</a></li>
       <li><a href="#contact" class="pill">Contact</a></li>
     </ul>
   </nav>
@@ -56,7 +57,7 @@
 
           <div class="hero-badges" aria-label="Highlights">
             <span class="pill-badge"><i class="fa-solid fa-headset" aria-hidden="true"></i> Support mindset</span>
-            <span class="pill-badge"><i class="fa-solid fa-code" aria-hidden="true"></i> Web + Java basics</span>
+            <span class="pill-badge"><i class="fa-solid fa-code" aria-hidden="true"></i> Web + programming fundamentals</span>
             <span class="pill-badge"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Security aware</span>
           </div>
         </div>
@@ -65,8 +66,25 @@
       <div class="hero-actions" aria-label="Primary actions">
         <a class="btn primary" href="#projects"><i class="fa-solid fa-folder-open" aria-hidden="true"></i> View Projects</a>
         <a class="btn ghost" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact</a>
+
+        <!-- Optional: Add a resume file later (resume.pdf in same folder) -->
+        <a class="btn glass" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Resume
+        </a>
+
         <a class="btn glass" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      </div>
+
+      <!-- Deployment callout (rubric: GitHub Pages link) -->
+      <div class="deploy-strip" aria-label="Deployment link">
+        <div class="deploy-left">
+          <span class="deploy-title"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Deployment</span>
+          <span class="deploy-sub">GitHub Pages live link (paste yours below once published):</span>
+        </div>
+        <a class="deploy-link" href="#" aria-label="Your live GitHub Pages link">
+          https://azometa.github.io/your-repo-name/
         </a>
       </div>
     </div>
@@ -82,7 +100,8 @@
       <h2>About</h2>
       <p class="sub">
         I’m building a strong foundation in IT and software engineering through hands-on projects, troubleshooting practice,
-        and modern web development. I’m known for being organized, dependable, and focused on clear communication.
+        and modern web development. I’m organized, dependable, and focused on clear communication — especially when explaining
+        technical issues in a calm, helpful way.
       </p>
     </div>
 
@@ -90,10 +109,10 @@
       <article class="panel">
         <h3><i class="fa-solid fa-bullseye" aria-hidden="true"></i> What I bring</h3>
         <ul class="list">
-          <li>Clear communication and a customer-first approach</li>
-          <li>Structured troubleshooting and documentation habits</li>
-          <li>Clean, consistent UI and attention to detail</li>
-          <li>Growth mindset — I learn fast and iterate</li>
+          <li>Customer-first mindset and strong communication</li>
+          <li>Structured troubleshooting + documentation habits</li>
+          <li>Clean UI, consistency, and attention to detail</li>
+          <li>Fast learner with a growth mindset</li>
         </ul>
       </article>
 
@@ -101,11 +120,29 @@
         <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> What I’m building</h3>
         <ul class="list">
           <li>Portfolio + projects deployed on GitHub Pages</li>
-          <li>Coursework projects (web + programming fundamentals)</li>
+          <li>Course projects focused on web + programming fundamentals</li>
           <li>IT foundations: networking basics, security awareness</li>
-          <li>Confidence with tools: Git/GitHub, debugging, UI polish</li>
+          <li>Comfort with tools: Git/GitHub, debugging, UI polish</li>
         </ul>
       </article>
+    </div>
+
+    <div class="stats-row" aria-label="Quick highlights">
+      <div class="stat">
+        <div class="stat-top"><i class="fa-solid fa-check" aria-hidden="true"></i> Strength</div>
+        <div class="stat-main">Reliable + consistent</div>
+        <div class="stat-sub">I finish what I start and keep work organized.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-top"><i class="fa-solid fa-comments" aria-hidden="true"></i> Communication</div>
+        <div class="stat-main">Clear + calm</div>
+        <div class="stat-sub">Explaining tech without overwhelming people.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-top"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Approach</div>
+        <div class="stat-main">Step-by-step</div>
+        <div class="stat-sub">Diagnose → isolate → fix → confirm.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -174,8 +211,8 @@
             <a class="mini-link" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github" aria-hidden="true"></i> Repo
             </a>
-            <a class="mini-link" href="#contact">
-              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Hire-ready notes
+            <a class="mini-link" href="#reflection">
+              <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Reflection
             </a>
           </div>
         </div>
@@ -190,7 +227,7 @@
         <div class="project-body">
           <h3>IT Learning Log</h3>
           <p>
-            Documenting troubleshooting patterns, ticketing mindset, and core system fundamentals.
+            Documenting troubleshooting patterns, ticketing mindset, and core system fundamentals — with clear notes and takeaways.
           </p>
 
           <div class="badges">
@@ -209,11 +246,10 @@
       </article>
     </div>
 
-    <!-- Employer-friendly callout -->
     <div class="callout">
       <div class="callout-icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
       <div class="callout-text">
-        <h3>Currently open to entry-level IT roles</h3>
+        <h3>Open to entry-level IT roles</h3>
         <p>
           I’m looking for opportunities where I can grow in technical support, systems fundamentals, and software engineering.
           I bring professionalism, fast learning, and strong communication.
@@ -223,8 +259,71 @@
   </div>
 </section>
 
+<!-- REFLECTIONS (Rubric) -->
+<section id="reflection" class="section alt">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Reflection</h2>
+      <p class="sub">
+        These reflections are included on-page to align with the rubric requirements.
+      </p>
+    </div>
+
+    <div class="reflection-grid">
+      <article class="reflection-card">
+        <div class="reflection-title">
+          <i class="fa-solid fa-robot" aria-hidden="true"></i>
+          <h3>Building Websites with AI</h3>
+        </div>
+        <p>
+          Using AI helped me move faster from “blank page” to a professional-looking layout. I learned how to ask better questions
+          and iterate: first I focused on structure (sections + navigation), then styling (typography, spacing, consistency),
+          and finally polish (responsive design, accessibility, hover states). The biggest lesson was that AI is strongest when I
+          combine it with my own judgment — I still had to review code, test it, and make sure it matched the rubric and my goals.
+        </p>
+        <p class="reflection-note">
+          What I improved most: organization, consistency, and professional presentation — the same things employers look for.
+        </p>
+      </article>
+
+      <article class="reflection-card">
+        <div class="reflection-title">
+          <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
+          <h3>Interview Question</h3>
+        </div>
+        <p class="q">
+          <strong>Question:</strong> “Tell me about a time you solved a difficult problem.”
+        </p>
+        <p>
+          <strong>Answer (STAR):</strong> In my coursework and projects, I’ve run into bugs and styling issues that made pages look broken
+          or behave inconsistently. I first identify what’s failing (layout, missing IDs, broken links, or CSS conflicts), then isolate it
+          by testing one change at a time. I document what I tried, apply the fix, and verify it works on desktop and mobile.
+          This helped me build a portfolio that’s clean, stable, and easy to navigate — and it reflects how I would handle real IT tickets:
+          stay calm, be systematic, and confirm the solution.
+        </p>
+      </article>
+
+      <article class="reflection-card">
+        <div class="reflection-title">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          <h3>LinkedIn Post</h3>
+        </div>
+        <p class="post">
+          I just built and deployed my portfolio website using HTML + CSS and GitHub Pages! 💜✨<br><br>
+          This project pushed me to focus on clean layout, responsive design, and a professional look that employers expect.
+          I also practiced documenting my process and improving the site through iteration.<br><br>
+          I’m currently seeking entry-level IT opportunities where I can grow in technical support and continue developing as a software engineer.
+          If you’re hiring or have advice, I’d love to connect!
+          <br><br>
+          #ITSupport #GitHubPages #WebDevelopment #CareerGrowth #Tech
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
-<section id="contact" class="section alt">
+<section id="contact" class="section">
   <div class="container">
     <div class="section-head center">
       <h2>Contact</h2>
@@ -268,4 +367,5 @@
 
 </body>
 </html>
+
 
