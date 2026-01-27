@@ -1,1 +1,114 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#ffffff;
+  color:#222;
+  text-align:center;
+}
+
+/* NAV */
+.nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#6a0dad;
+}
+
+.nav a {
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:bold;
+}
+
+.nav a:hover {
+  text-decoration:underline;
+}
+
+.logo {
+  font-weight:bold;
+  color:white;
+}
+
+/* HERO */
+.hero {
+  padding:50px 20px;
+  background:#f7f2ff;
+}
+
+.avatar {
+  width:100px;
+  border-radius:50%;
+  border:3px solid #6a0dad;
+}
+
+.hero h1 {
+  margin:10px 0;
+}
+
+.hero-buttons a {
+  display:inline-block;
+  margin:8px;
+  padding:8px 18px;
+  background:#6a0dad;
+  color:white;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.hero-buttons a:hover {
+  background:#530b8a;
+}
+
+/* SECTIONS */
+.section {
+  max-width:900px;
+  margin:50px auto;
+  padding:0 20px;
+}
+
+/* SKILLS */
+.skills {
+  background:#6a0dad;
+  color:white;
+  padding:30px 20px;
+  border-radius:12px;
+}
+
+.skill-pills span {
+  display:inline-block;
+  margin:6px;
+  padding:8px 15px;
+  background:rgba(255,255,255,0.2);
+  border-radius:20px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background:#f7f2ff;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* CONTACT */
+.email-link {
+  color:#6a0dad;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.contact-links a {
+  margin:0 10px;
+  color:#6a0dad;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+  padding:20px;
+  color:#777;
+  font-size:14px;
+}
 
