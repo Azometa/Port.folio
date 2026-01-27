@@ -1,176 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Angelique Zometa | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Icons (bonus rubric) -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <!-- Top Nav -->
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#home" aria-label="Go to top">AZ</a>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Back to top">
+        <span class="brand-dot"></span> AZ
+      </a>
 
-      <nav class="nav">
-        <a class="nav__btn" href="#home">Home</a>
-        <a class="nav__btn" href="#mission">Mission</a>
-        <a class="nav__btn" href="#skills">Skills</a>
-        <a class="nav__btn" href="#projects">Projects</a>
-        <a class="nav__btn" href="#contact">Contact</a>
-      </nav>
-
-      <a class="cta" href="#contact"><i class="fa-solid fa-sparkles"></i> Let’s Connect</a>
-    </div>
+      <ul class="nav-links">
+        <li><a class="nav-btn" href="#home">Home</a></li>
+        <li><a class="nav-btn" href="#about">About</a></li>
+        <li><a class="nav-btn" href="#projects">Projects</a></li>
+        <li><a class="nav-btn" href="#skills">Skills</a></li>
+        <li><a class="nav-btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO / BANNER (IMAGE #1) -->
-  <main id="home" class="hero" aria-label="Hero section">
-    <!-- Uses your repo image directly (no folder):
-         Make sure this exact filename exists in your repo root: VR_Girl.JPG -->
-    <div class="hero__bg" role="img" aria-label="Futuristic tech background"></div>
+  <!-- HERO (like his) -->
+  <main id="home" class="hero">
+    <div class="hero-overlay"></div>
 
-    <section class="hero__card" aria-label="Profile summary">
-      <img class="avatar" src="https://github.com/Azometa.png" alt="Angelique Zometa profile photo" />
+    <section class="hero-inner">
+      <img
+        class="avatar"
+        src="https://github.com/Azometa.png?size=240"
+        alt="Angelique Zometa profile photo"
+      />
 
-      <h1 class="hero__title">Angelique Zometa</h1>
-      <p class="hero__subtitle">Neon Tech • IT Support • Software Engineering Student</p>
+      <h1 class="hero-title">Welcome to My Portfolio</h1>
+      <p class="hero-subtitle">Cyberpunk Web Developer • Software Engineering Student</p>
 
-      <div class="hero__actions">
-        <!-- Email hyperlink -->
-        <a class="pill" href="mailto:angeliquezometa@gmail.com">
-          <i class="fa-solid fa-envelope"></i> Email
-        </a>
-
-        <!-- LinkedIn -->
-        <a class="pill" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-
-        <!-- GitHub -->
-        <a class="pill" href="https://github.com/Azometa" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
+      <div class="hero-cta">
+        <a class="pill" href="mailto:angeliquezometa@gmail.com">Email Me</a>
+        <a class="pill" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="pill" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </section>
   </main>
 
-  <!-- MISSION (IMAGE #2) -->
-  <section id="mission" class="section">
-    <div class="container card-row">
-      <div class="card-row__media">
-        <!-- Make sure this exact filename exists in your repo root: AI_Hand.jpg -->
-        <img class="media-img" src="AI_Hand.jpg" alt="AI and technology concept" />
-      </div>
-
-      <div class="card-row__text">
-        <h2 class="section__title">Mission</h2>
-        <p class="section__copy">
-          My mission is to build a strong foundation in IT and software engineering through hands-on projects,
-          consistent practice, and clean, professional work. I enjoy troubleshooting, supporting users, and
-          designing modern solutions with a sleek, futuristic vibe.
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          Hi, I’m <strong>Angelique Zometa</strong> — a <strong>Web Developer</strong> and
+          <strong>Software Engineer</strong>-in-progress focused on clean UI, strong foundations, and real
+          hands-on learning. I enjoy troubleshooting, building modern web pages, and making tech feel sleek,
+          polished, and user-friendly.
         </p>
+      </div>
 
-        <div class="mini-links">
-          <a href="#projects" class="link">See Projects</a>
-          <span class="dot">•</span>
-          <a href="#skills" class="link">View Skills</a>
+      <!-- small IT pics only (optional) -->
+      <div class="mini-gallery" aria-label="Technology gallery">
+        <figure class="mini">
+          <img src="Code_Typing.JPG" alt="Typing code on a laptop" loading="lazy" />
+          <figcaption>Development</figcaption>
+        </figure>
+        <figure class="mini">
+          <img src="AI_Hand.jpg" alt="AI technology concept" loading="lazy" />
+          <figcaption>Future Tech</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="stack">
+        <article class="row-card">
+          <div class="row-accent"></div>
+          <div class="row-content">
+            <h3>Project 1: Portfolio Website (Week 2)</h3>
+            <p>A responsive single-page portfolio built with HTML + CSS and deployed using GitHub Pages.</p>
+            <a class="text-link" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </article>
+
+        <article class="row-card">
+          <div class="row-accent"></div>
+          <div class="row-content">
+            <h3>Project 2: Support Notes</h3>
+            <p>Short IT troubleshooting writeups: symptoms, steps, fixes, and clean documentation.</p>
+            <a class="text-link" href="#contact">Ask Me</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="stack">
+        <div class="skill-row">
+          <span class="skill-tag">HTML</span>
+          <div class="skill-bar"><div class="fill" style="width: 82%"></div></div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SKILLS BAR (matches example vibe) -->
-  <section id="skills" class="skills-band" aria-label="Skills section">
-    <div class="container">
-      <h2 class="skills-band__title">Skills</h2>
-      <p class="skills-band__sub">Here are a few of the skills I bring to the table:</p>
+        <div class="skill-row">
+          <span class="skill-tag">CSS</span>
+          <div class="skill-bar"><div class="fill" style="width: 78%"></div></div>
+        </div>
 
-      <div class="chips">
-        <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
-        <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-        <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
-        <span class="chip"><i class="fa-solid fa-headset"></i> IT Support</span>
-        <span class="chip"><i class="fa-solid fa-screwdriver-wrench"></i> Troubleshooting</span>
-      </div>
-    </div>
-  </section>
+        <div class="skill-row">
+          <span class="skill-tag">Java • C • Python</span>
+          <div class="skill-bar"><div class="fill" style="width: 70%"></div></div>
+        </div>
 
-  <!-- PROJECTS / FEATURED TECH (IMAGE #3) -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section__title">Projects</h2>
-      <p class="section__copy">
-        A clean single-page portfolio with navigation, modern layout, and GitHub Pages deployment.
-      </p>
+        <div class="skill-row">
+          <span class="skill-tag">Problem Solving</span>
+          <div class="skill-bar"><div class="fill" style="width: 75%"></div></div>
+        </div>
 
-      <div class="grid">
-        <article class="tile">
-          <div class="tile__top">
-            <span class="badge">Featured</span>
-            <h3 class="tile__title">Portfolio Website (Week 2)</h3>
-          </div>
-          <p class="tile__body">
-            Built with HTML + CSS. Focused on structure, styling polish, and deployment to GitHub Pages.
-          </p>
-          <div class="tile__actions">
-            <a class="btn" href="https://github.com/Azometa" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i> Repo
-            </a>
-            <a class="btn btn--ghost" href="#contact">
-              <i class="fa-solid fa-paper-plane"></i> Contact
-            </a>
-          </div>
-        </article>
-
-        <article class="tile tile--media">
-          <!-- Make sure this exact filename exists in your repo root: Code_Typing.JPG -->
-          <img class="tile__img" src="Code_Typing.JPG" alt="Typing code on a laptop" />
-          <div class="tile__overlay">
-            <h3 class="tile__title">Futuristic IT Focus</h3>
-            <p class="tile__body">Clean UI • Support mindset • Modern tech energy</p>
-          </div>
-        </article>
+        <div class="skill-row">
+          <span class="skill-tag">Teamwork</span>
+          <div class="skill-bar"><div class="fill" style="width: 72%"></div></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container contact-card">
-      <h2 class="section__title">Contact</h2>
-      <p class="section__copy">Don’t be shy — reach out!</p>
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
 
-      <div class="contact-actions">
-        <a class="pill pill--big" href="mailto:angeliquezometa@gmail.com">
-          <i class="fa-solid fa-envelope"></i> angeliquezometa@gmail.com
-        </a>
+      <div class="card">
+        <p class="muted">Don’t be shy — reach out.</p>
 
-        <div class="contact-links">
-          <a class="pill" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-          <a class="pill" href="https://github.com/Azometa" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
+        <div class="contact-actions">
+          <a class="pill big" href="mailto:angeliquezometa@gmail.com">angeliquezometa@gmail.com</a>
+          <div class="mini-links">
+            <a class="icon-link" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="icon-link" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <span>© 2026 Angelique Zometa</span>
-      <span class="footer__glow">Neon Purple • Black • Futuristic</span>
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p>© <span id="year"></span> Angelique Zometa. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
-
-
