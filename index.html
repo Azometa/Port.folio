@@ -1,359 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" id="top">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Angelique Zometa — entry-level IT portfolio with projects, skills, and contact info." />
-  <title>Angelique Zometa | IT Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angelique Zometa | Portfolio</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAV -->
-<header class="nav-wrap">
-  <nav class="nav container" aria-label="Primary navigation">
-    <a class="brand" href="#top" aria-label="Back to top">
-      <span class="brand-dot" aria-hidden="true"></span>
-      Angelique Zometa
-    </a>
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">AZ Portfolio</div>
 
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#reflection">Reflection</a></li>
-      <li><a href="#contact" class="pill">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
 
-  <!-- HERO -->
-  <section class="hero" aria-label="Hero section">
-    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-text">
+      <h1>Hi, I’m <span class="glow">Angelique Zometa</span></h1>
 
-    <div class="hero-inner container">
-      <div class="hero-card">
-        <div class="hero-top">
-          <img
-            class="avatar-img"
-            src="https://github.com/Azometa.png"
-            alt="Angelique Zometa profile photo"
-            loading="lazy"
-          />
+      <p>
+        Aspiring IT Professional and Software Engineer building modern,
+        clean, and futuristic web experiences.
+      </p>
 
-          <div class="hero-head">
-            <h1>Angelique Zometa</h1>
-            <p class="tagline">Aspiring Software Engineer • Entry-Level IT • Customer-First Problem Solver</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+    </div>
 
-            <div class="hero-badges" aria-label="Highlights">
-              <span class="pill-badge"><i class="fa-solid fa-headset" aria-hidden="true"></i> Support mindset</span>
-              <span class="pill-badge"><i class="fa-solid fa-code" aria-hidden="true"></i> Web + programming fundamentals</span>
-              <span class="pill-badge"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> Security aware</span>
-            </div>
-          </div>
-        </div>
+    <div class="hero-images">
+      <img src="images/Hero.png" class="main-img" alt="Futuristic tech image">
 
-        <div class="hero-actions" aria-label="Primary actions">
-          <a class="btn primary" href="#projects">
-            <i class="fa-solid fa-folder-open" aria-hidden="true"></i> View Projects
-          </a>
+      <div class="profile-card">
+        <img src="https://github.com/Azometa.png" class="avatar" alt="GitHub profile picture">
+        <p>Angelique Zometa</p>
+      </div>
+    </div>
 
-          <a class="btn ghost" href="#contact">
-            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact
-          </a>
+  </div>
+</section>
 
-          <a class="btn glass" href="resume.pdf" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Resume
-          </a>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am currently learning web development and software engineering with a strong
+      focus on HTML, CSS, problem solving, and design. I enjoy creating visually
+      appealing projects that are organized, professional, and user friendly.
+    </p>
 
-          <a class="btn glass" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
-          </a>
-        </div>
+    <img src="images/VR_Girl.png" class="feature-img" alt="VR technology image">
+  </div>
+</section>
+
+<section id="skills" class="section alt">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <div class="skill-grid">
+
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
       </div>
 
-      <div class="hero-glow" aria-hidden="true"></div>
-    </div>
-  </section>
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>About</h2>
-        <p class="sub">
-          I’m building a strong foundation in IT and software engineering through hands-on projects, troubleshooting practice,
-          and modern web development. I’m organized, dependable, and focused on clear communication — especially when explaining
-          technical issues in a calm, helpful way.
+      <div class="skill">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+      </div>
+
+      <div class="skill">
+        <i class="fa-solid fa-bug"></i>
+        <h3>Debugging</h3>
+      </div>
+
+    </div>
+
+    <div class="image-row">
+      <img src="images/Hand_Typing.png" alt="Typing">
+      <img src="images/Code.png" alt="Code">
+      <img src="images/Ai_Hand.png" alt="AI">
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          Built using HTML and CSS, featuring navigation, images,
+          icons, and responsive layout.
         </p>
       </div>
 
-      <div class="grid-2">
-        <article class="panel">
-          <h3><i class="fa-solid fa-bullseye" aria-hidden="true"></i> What I bring</h3>
-          <ul class="list">
-            <li>Customer-first mindset and strong communication</li>
-            <li>Structured troubleshooting + documentation habits</li>
-            <li>Clean UI, consistency, and attention to detail</li>
-            <li>Fast learner with a growth mindset</li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> What I’m building</h3>
-          <ul class="list">
-            <li>Portfolio + projects hosted on GitHub</li>
-            <li>Course projects focused on web + programming fundamentals</li>
-            <li>IT foundations: networking basics, security awareness</li>
-            <li>Comfort with tools: Git/GitHub, debugging, UI polish</li>
-          </ul>
-        </article>
+      <div class="project">
+        <h3>Future Projects</h3>
+        <p>
+          More projects will be added as I continue learning and growing.
+        </p>
       </div>
 
-      <div class="stats-row" aria-label="Quick highlights">
-        <div class="stat">
-          <div class="stat-top"><i class="fa-solid fa-check" aria-hidden="true"></i> Strength</div>
-          <div class="stat-main">Reliable + consistent</div>
-          <div class="stat-sub">I finish what I start and keep work organized.</div>
-        </div>
-        <div class="stat">
-          <div class="stat-top"><i class="fa-solid fa-comments" aria-hidden="true"></i> Communication</div>
-          <div class="stat-main">Clear + calm</div>
-          <div class="stat-sub">Explaining tech without overwhelming people.</div>
-        </div>
-        <div class="stat">
-          <div class="stat-top"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Approach</div>
-          <div class="stat-main">Step-by-step</div>
-          <div class="stat-sub">Diagnose → isolate → fix → confirm.</div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Skills</h2>
-        <p class="sub">A few skills I’m building and strengthening:</p>
-      </div>
-
-      <div class="chip-row" aria-label="Skills list">
-        <span class="chip"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
-        <span class="chip"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
-        <span class="chip"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
-        <span class="chip"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</span>
-        <span class="chip"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Troubleshooting</span>
-        <span class="chip"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Networking Basics</span>
-        <span class="chip"><i class="fa-solid fa-lock" aria-hidden="true"></i> Security Awareness</span>
-      </div>
-
-      <div class="gadget-grid" aria-label="Tech visuals">
-        <figure class="gadget">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80" alt="Laptop on a desk" loading="lazy"/>
-          <figcaption>Laptop + Workflow</figcaption>
-        </figure>
-        <figure class="gadget">
-          <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8f?auto=format&fit=crop&w=1200&q=80" alt="Server racks in a data center" loading="lazy"/>
-          <figcaption>Systems + Infrastructure</figcaption>
-        </figure>
-        <figure class="gadget">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Code on a screen" loading="lazy"/>
-          <figcaption>Coding + Debugging</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Projects</h2>
-        <p class="sub">A growing collection of course projects and IT-focused work.</p>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-            alt="Team collaborating at a desk"
-            loading="lazy"
-          />
-          <div class="project-body">
-            <h3>Portfolio Website</h3>
-            <p>Single-page portfolio with a polished UI and responsive layout.</p>
-
-            <div class="badges">
-              <span>HTML</span><span>CSS</span><span>Accessibility</span>
-            </div>
-
-            <div class="project-actions">
-              <a class="mini-link" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github" aria-hidden="true"></i> Repo
-              </a>
-              <a class="mini-link" href="#reflection">
-                <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Reflection
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img
-            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
-            alt="Cybersecurity themed image"
-            loading="lazy"
-          />
-          <div class="project-body">
-            <h3>IT Learning Log</h3>
-            <p>Documenting troubleshooting patterns, a ticketing mindset, and core system fundamentals with clear notes and takeaways.</p>
-
-            <div class="badges">
-              <span>Troubleshooting</span><span>Documentation</span><span>Support</span>
-            </div>
-
-            <div class="project-actions">
-              <a class="mini-link" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
-              </a>
-              <a class="mini-link" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="callout">
-        <div class="callout-icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
-        <div class="callout-text">
-          <h3>Open to entry-level IT roles</h3>
-          <p>
-            I’m looking for opportunities where I can grow in technical support, systems fundamentals, and software engineering.
-            I bring professionalism, fast learning, and strong communication.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REFLECTIONS -->
-  <section id="reflection" class="section alt">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Reflection</h2>
-        <p class="sub">These reflections are included on-page to align with the rubric requirements.</p>
-      </div>
-
-      <div class="reflection-grid">
-        <article class="reflection-card">
-          <div class="reflection-title">
-            <i class="fa-solid fa-robot" aria-hidden="true"></i>
-            <h3>Building Websites with AI</h3>
-          </div>
-          <p>
-            Using AI helped me move faster from “blank page” to a professional-looking layout. I learned how to ask better questions
-            and iterate: first I focused on structure (sections + navigation), then styling (typography, spacing, consistency),
-            and finally polish (responsive design, accessibility, hover states). The biggest lesson was that AI is strongest when I
-            combine it with my own judgment — I still had to review code, test it, and make sure it matched the rubric and my goals.
-          </p>
-          <p class="reflection-note">
-            What I improved most: organization, consistency, and professional presentation — the same things employers look for.
-          </p>
-        </article>
-
-        <article class="reflection-card">
-          <div class="reflection-title">
-            <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
-            <h3>Interview Question</h3>
-          </div>
-          <p class="q">
-            <strong>Question:</strong> “Tell me about a time you solved a difficult problem.”
-          </p>
-          <p>
-            <strong>Answer (STAR):</strong> In my coursework and projects, I’ve run into bugs and styling issues that made pages look broken
-            or behave inconsistently. I first identify what’s failing (layout, missing IDs, broken links, or CSS conflicts), then isolate it
-            by testing one change at a time. I document what I tried, apply the fix, and verify it works on desktop and mobile.
-            This helped me build a portfolio that’s clean, stable, and easy to navigate — and it reflects how I would handle real IT tickets:
-            stay calm, be systematic, and confirm the solution.
-          </p>
-        </article>
-
-        <article class="reflection-card">
-          <div class="reflection-title">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            <h3>LinkedIn Post</h3>
-          </div>
-          <p class="post">
-            I just built my portfolio website using HTML + CSS! 💜✨<br><br>
-            This project pushed me to focus on clean layout, responsive design, and a professional look that employers expect. I also practiced documenting my process and improving the site through iteration.
-            
-            <br><br>
-            
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-head center">
-        <h2>Contact</h2>
-        <p class="sub">Let’s connect — open to entry-level IT opportunities.</p>
-      </div>
-
-      <div class="contact-card">
-        <a class="contact-item" href="mailto:angeliquezometa@gmail.com">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-          <div>
-            <div class="label">Email</div>
-            <div class="value">angeliquezometa@gmail.com</div>
-          </div>
-        </a>
-
-        <a class="contact-item" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-          <div>
-            <div class="label">LinkedIn</div>
-            <div class="value">Angelique Zometa</div>
-          </div>
-        </a>
-
-        <a class="contact-item" href="https://github.com/Azometa" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github" aria-hidden="true"></i>
-          <div>
-            <div class="label">GitHub</div>
-            <div class="value">github.com/Azometa</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>© 2026 Angelique Zometa</p>
-    <p class="muted">Designed with a clean futuristic neon-purple aesthetic.</p>
   </div>
+</section>
+
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <div class="contact-grid">
+
+      <a href="mailto:angeliquezometa@gmail.com" class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email Me</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="https://github.com/Azometa" target="_blank" class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Angelique Zometa</p>
 </footer>
 
 </body>
 </html>
+
+
+
 
