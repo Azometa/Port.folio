@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 
-  <!-- Icons (LevelUp) -->
+  <!-- Font Awesome (icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <link rel="stylesheet" href="style.css" />
@@ -19,10 +19,10 @@
 
 <body>
 
-  <!-- NAV (LevelUp) -->
+  <!-- NAV -->
   <header class="nav-wrap">
     <nav class="nav container" aria-label="Primary">
-      <a class="brand" href="#top">
+      <a class="brand" href="#top" aria-label="Back to top">
         <span class="dot" aria-hidden="true"></span>
         <span>Angelique Zometa</span>
       </a>
@@ -31,17 +31,17 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#reflection">Reflection</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <!-- HERO (centered glass card like your screenshot) -->
+  <!-- HERO -->
   <section class="hero container" id="home">
     <div class="hero-card glass">
       <div class="hero-top">
-        <img class="avatar" src="https://github.com/Azometa.png" alt="Angelique Zometa profile photo">
+        <img class="avatar" src="https://github.com/Azometa.png" alt="Angelique Zometa GitHub profile photo">
+
         <div class="hero-title">
           <h1>Angelique Zometa</h1>
           <p class="subtitle">Aspiring Software Engineer • Entry-Level IT • Customer-First Problem Solver</p>
@@ -55,9 +55,6 @@
           <div class="btn-row">
             <a class="btn primary" href="#projects"><i class="fa-solid fa-folder-open"></i> View Projects</a>
             <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
-
-            <!-- Optional buttons: keep or remove -->
-            <a class="btn" href="#" aria-disabled="true"><i class="fa-solid fa-file"></i> Resume</a>
             <a class="btn" href="https://github.com/Azometa" target="_blank" rel="noopener">
               <i class="fa-brands fa-github"></i> GitHub
             </a>
@@ -66,7 +63,7 @@
       </div>
 
       <div class="hero-banner">
-        <img src="images/Hero.png" alt="Futuristic neon tech background banner">
+        <img src="images/Hero.png" alt="Futuristic neon tech banner">
       </div>
     </div>
   </section>
@@ -76,9 +73,15 @@
     <div class="section-head">
       <h2>About</h2>
       <p>
-        I’m building a strong foundation in IT and software engineering through hands-on projects,
-        troubleshooting practice, and modern web development. I’m organized, dependable, and focused
-        on clear communication — especially when explaining technical issues in a calm, helpful way.
+        I am an aspiring IT professional and software engineer with a growing foundation in web development,
+        troubleshooting, and problem solving. I enjoy creating organized, user-friendly projects that combine
+        clean design with practical functionality. Through hands-on coursework and personal projects, I am
+        building skills in HTML, CSS, debugging, and technical communication.
+      </p>
+      <p>
+        I approach challenges with patience and structure, focusing on understanding problems before solving them.
+        My goal is to continue learning, contribute to meaningful projects, and grow into a dependable technical
+        professional who delivers high-quality work.
       </p>
     </div>
 
@@ -130,6 +133,7 @@
     <div class="section-head center">
       <h2>Skills</h2>
       <p>A few skills I’m building and strengthening:</p>
+
       <div class="pill-row">
         <span class="pill"><i class="fa-brands fa-html5"></i> HTML</span>
         <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
@@ -150,7 +154,7 @@
       </article>
 
       <article class="glass img-card">
-        <img src="images/Ai_Hand.png" alt="Server racks in a data center image">
+        <img src="images/Ai_Hand.png" alt="Systems infrastructure image">
         <div class="img-card-body">
           <h3>Systems + Infrastructure</h3>
         </div>
@@ -174,7 +178,7 @@
 
     <div class="project-grid">
       <article class="glass project">
-        <img src="images/VR_Girl.png" alt="Portfolio website preview image">
+        <img src="images/VR_Girl.png" alt="Portfolio project image">
         <div class="project-body">
           <h3>Portfolio Website</h3>
           <p>Single-page portfolio with a polished UI and responsive layout.</p>
@@ -182,23 +186,25 @@
           <div class="tag-row">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
-            <span class="tag">Accessibility</span>
+            <span class="tag">Responsive</span>
           </div>
 
           <div class="project-actions">
             <a class="btn small" href="https://github.com/Azometa" target="_blank" rel="noopener">
               <i class="fa-brands fa-github"></i> Repo
             </a>
-            <a class="btn small" href="#reflection"><i class="fa-solid fa-pen"></i> Reflection</a>
+            <a class="btn small" href="#contact">
+              <i class="fa-solid fa-paper-plane"></i> Contact
+            </a>
           </div>
         </div>
       </article>
 
       <article class="glass project">
-        <img src="images/Ai_Hand.png" alt="IT learning log preview image">
+        <img src="images/Ai_Hand.png" alt="IT learning log image">
         <div class="project-body">
           <h3>IT Learning Log</h3>
-          <p>Documenting troubleshooting patterns, a customer mindset, and core system fundamentals.</p>
+          <p>Notes and practice for troubleshooting, documentation, and systems fundamentals.</p>
 
           <div class="tag-row">
             <span class="tag">Troubleshooting</span>
@@ -207,7 +213,7 @@
           </div>
 
           <div class="project-actions">
-            <a class="btn small" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <a class="btn small" href="https://www.linkedin.com/in/angelique-zometa-9a49493a0" target="_blank" rel="noopener">
               <i class="fa-brands fa-linkedin"></i> LinkedIn
             </a>
             <a class="btn small" href="https://github.com/Azometa" target="_blank" rel="noopener">
@@ -217,67 +223,13 @@
         </div>
       </article>
     </div>
-
-    <div class="glass callout">
-      <p><i class="fa-solid fa-briefcase"></i> <strong>Open to entry-level IT roles</strong></p>
-      <p class="muted">
-        I’m looking for opportunities where I can grow in technical support, systems fundamentals,
-        and software engineering. I bring professionalism, fast learning, and strong communication.
-      </p>
-    </div>
-  </section>
-
-  <!-- REFLECTION (rubric questions on-page) -->
-  <section class="section container" id="reflection">
-    <div class="section-head center">
-      <h2>Reflection</h2>
-      <p>These reflections are included on-page to align with the rubric requirements.</p>
-    </div>
-
-    <div class="grid-3 reflection-grid">
-      <article class="glass ref-card">
-        <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Building Websites with AI</h3>
-        <p>
-          Using AI helped me move faster from “blank page” to a professional-looking layout.
-          I learned to ask better questions and iterate: start with structure (sections + navigation),
-          then styling (typography, spacing, consistency), and finally polish (responsive design, accessibility, and images).
-        </p>
-        <p class="muted">
-          What I improved most: organization, consistency, and professional presentation — the same things employers look for.
-        </p>
-      </article>
-
-      <article class="glass ref-card">
-        <h3><i class="fa-solid fa-microphone"></i> Interview Question</h3>
-        <p class="muted"><strong>Question:</strong> “Tell me about a time you solved a difficult problem.”</p>
-        <p>
-          While building this site, I ran into bugs and styling issues that made sections look broken
-          (layout changes, missing IDs, broken paths, or CSS conflicts). I fixed them by testing one change at a time,
-          documenting what I tried, and verifying it worked on desktop and mobile.
-        </p>
-        <p class="muted">
-          This taught me to troubleshoot like IT: stay calm, be systematic, and confirm the solution.
-        </p>
-      </article>
-
-      <article class="glass ref-card">
-        <h3><i class="fa-brands fa-linkedin"></i> LinkedIn Post</h3>
-        <p class="quote">
-          I just built my portfolio website using HTML + CSS 💜✨
-        </p>
-        <p>
-          This project challenged me to focus on clean layout, responsive design, and a professional look.
-          I also practiced troubleshooting my project and improving the site through iteration.
-        </p>
-      </article>
-    </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section container" id="contact">
     <div class="section-head center">
       <h2>Contact</h2>
-      <p>Let’s connect — open to entry-level IT opportunities.</p>
+      <p>Let’s connect — open to opportunities.</p>
     </div>
 
     <div class="contact-row">
@@ -317,7 +269,3 @@
 
 </body>
 </html>
-
-
-
-
